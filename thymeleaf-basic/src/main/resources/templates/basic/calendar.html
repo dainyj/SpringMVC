@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Calendars</h1>
+<ul>
+
+    <span th:text="${#calendars.format(cal)}"></span>?????? 뭐가 문제일까?
+<!--    <form th:action="@{/basic/calendar}" th:object="${calender}" method="POST"
+          style="display: flex; justify-content: flex-end; padding: 10px 0;">
+        <input type="date" th:field="*{start}">
+        ~
+        <input type="date" th:field="*{end}">
+        <select th:field="*{searchType}">
+            <option value="name">요청자</option>
+            <option value="phone">연락처</option>
+        </select>
+        <input th:field="*{keyword}" type="text" placeholder="검색어를 입력하세요."/>
+        <input type="submit" value="검색"/>
+    </form>-->
+
+
+</ul>
+</body>
+</html>
